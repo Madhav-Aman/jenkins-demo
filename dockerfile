@@ -4,8 +4,6 @@ FROM openjdk:17-jdk-slim
 # Set the working directory inside the container
 WORKDIR /app
 
-COPY . .
-RUN mvn clean install
 
 # Copy the JAR file from your build directory into the container
 COPY target/jenkins-demo.jar /app/jenkins-demo.jar
