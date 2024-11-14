@@ -12,4 +12,10 @@ public class UserController {
     public String getName(){
         return "Madhav Aman Srivastava";
     }
+
+    @GetMapping("/1")
+    public String getAddress(){
+        return "MADHAV_AMAN_SRIVASTAVA IS MY NAME";
+    }
+
 }
